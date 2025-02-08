@@ -1,0 +1,47 @@
+.brand-logo img {
+    width: 150px
+}
+.cardStyle{
+    background-size: cover; 
+    background-position: center; 
+    min-height: 200px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    cursor: pointer;
+}
+.cardStyle span{
+    font-size: 1.5em;
+    text-shadow: 2px 2px 4px #000000;
+}
+.bienvenida h1{
+    font-size: 4em;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+.bienvenida h6{
+    text-transform: uppercase;
+    text-decoration: wavy;
+    font-size: 1em;
+    font-weight: 600;
+    font-style: oblique;
+}
+.bienvenida p{
+    font-size: 1em;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 20px;
+    line-height: 2em;
+}
+.bienvenida a{
+    font-size: 1em;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+    
+}
