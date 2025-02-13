@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 classes: 'rounded' 
             });
 
-            // Reiniciar el formulario
             alertaForm.reset();
         });
     } else {
