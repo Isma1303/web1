@@ -5,9 +5,8 @@
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
       <link rel="stylesheet" href="css/materialize.min.css">
-        <link rel="stylesheet" href="css/style.css">
-    
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
 
     <body>
@@ -20,8 +19,8 @@
                     <ul class="right hide-on-med-and-down">
                         <li><a href="index.html">Inicio</a></li>
                         <li><a href="quienesSomos.html">Quienes Somos</a></li>
-                        <li><a href="productos.html">Nuestros productos</a></li>
                         <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="productos.html">Que hacemos</a></li>
                         <li><a href="contacto.html">Contactanos</a></li>
                     </ul>
                     
@@ -31,10 +30,10 @@
             </div>    
               <ul class="sidenav" id="mobile-demo">
                 <li><a href="index.html">Inicio</a></li>
-                  <li><a href="quienesSomos.html">Quienes Somos</a></li>
-                  <li><a href="productos.html">Nuestros productos</a></li>
-                  <li><a href="servicios.html">Servicios</a></li>
-                  <li><a href="contacto.html">Contactanos</a></li>
+                <li><a href="quienesSomos.html">Quienes Somos</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="productos.html">Que hacemos</a></li>
+                <li><a href="contacto.html">Contactanos</a></li>
               </ul>
 
               <div class="carousel carousel-slider mb-4">
@@ -48,25 +47,25 @@
                 <a class="carousel-item" href="#one!" ><img src="img/Carrilera.png"></a>
                 </div>
                 <div class="row center">
-                <div class="col m3 s12 ">
-                  <div class="card-panel lime lighten-3 cardStyle" style="background-image: url('img/card1.jpg'); " onclick="location.href='#';">
-                    <span class="white-text" >Cursos libres avanzados</span>
+                  <div class="col s3 m3">
+                    <div class="card-panel lime lighten-3 cardStyle" style="background-image: url('img/card1.jpg'); " id="cursos-libres">
+                      <span class="white-text">Cursos libres avanzados</span>
+                    </div>                    
                     </div>
-                  </div>
-                  <div class="col s12 m3">
-                    <div class="card-panel red lighten-3 cardStyle" style="background-image: url('img/card2.jpg');" onclick="location.href='#';">
-                    <span class="white-text" >Programas</span>
+                    <div class="col s3 m3">
+                      <div class="card-panel red lighten-3 cardStyle" style="background-image: url('img/card2.jpg');" id="Programas">
+                      <span class="white-text" >Programas</span>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col s12 m3 ">
-                    <div class="card-panel indigo lighten-3 cardStyle" style="background-image: url('img/card3.jpg');" onclick="location.href='#';">
-                    <span class="white-text" >Pregados</span>
+                    <div class="col s3 m3">
+                      <div class="card-panel indigo lighten-3 cardStyle" style="background-image: url('img/card3.jpg');" id="Pregrados">
+                      <span class="white-text" >Pregados</span>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col s12 m3 ">
-                    <div class="card-panel grey lighten-1 cardStyle" style="background-image: url('img/card4.jpg');" onclick="location.href='#';">
-                    <span class="white-text">Posgrados</span>
-                  </div>
+                    <div class="col s3 m3">
+                      <div class="card-panel grey lighten-1 cardStyle" style="background-image: url('img/card4.jpg');" id="Posgrados">
+                      <span class="white-text">Posgrados</span>
+                    </div>
                 </div>
                 </div>
               <div class="container center bienvenida">
@@ -111,13 +110,18 @@ Se busca a través de una metodología altamente activa, participativa y aplicad
                 </div>
               </footer>
               
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            
       <script src="js/materialize.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      
+     
 
       <script>
         document.addEventListener('DOMContentLoaded', function() {
-            var elems = document.querySelectorAll('.sidenav');
-            var instances = M.Sidenav.init(elems);
+            var sidenavElems = document.querySelectorAll('.sidenav');
+            var modalElems = document.querySelectorAll('.modal');
+            var sidenavInstances = M.Sidenav.init(sidenavElems);
+            var modalInstances = M.Modal.init(modalElems);
           });
           
           document.addEventListener('DOMContentLoaded', function() {
@@ -131,6 +135,7 @@ Se busca a través de una metodología altamente activa, participativa y aplicad
             }, 6000); 
           });
       </script>
+      <script src="js/sharon.js"></script>
       
 
     </body>

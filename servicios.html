@@ -46,7 +46,7 @@
     <div class="container center">
         <div class="row">
             <div class="col s12 m4">
-                <div class="card">
+                <div class="card" >
                     <div class="card-image">
                         <img src="img/s1.jpg" class="service-img" data-title="Servicio Académico" data-text="Inscripción, asesorías y recursos educativos." data-icon="bi bi-person-badge">
                     </div>
@@ -102,13 +102,14 @@
             </div>
         </div>
     </footer>
-
+    
     <script src="js/materialize.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             var elems = document.querySelectorAll('.sidenav');
             var instances = M.Sidenav.init(elems);
+            
             var parallaxElems = document.querySelectorAll('.parallax');
             M.Parallax.init(parallaxElems);
 
@@ -117,7 +118,6 @@
                     let title = this.getAttribute('data-title');
                     let text = this.getAttribute('data-text');
                     let iconClass = this.getAttribute('data-icon');
-
                     Swal.fire({
                         title: title,
                         html: `<i class="${iconClass}" style="font-size: 2rem;"></i><p>${text}</p>`,
