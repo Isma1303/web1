@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-  <html>
+  <html lang="es">
     <head>
-
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Menú Dinámico</title>
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
       <link rel="stylesheet" href="css/materialize.min.css">
       <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">  
     </head>
 
     <body>
@@ -14,27 +16,14 @@
             <nav class="blue-grey darken-4">
                 <div class="container">
                     <div class="nav-wrapper">
-                    <a href="index.html" class="brand-logo"><img src="img/L-bLANCO.png" alt=""></a>
-                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                    <ul class="right hide-on-med-and-down">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="quienesSomos.html">Quienes Somos</a></li>
-                        <li><a href="servicios.html">Servicios</a></li>
-                        <li><a href="productos.html">Que hacemos</a></li>
-                        <li><a href="contacto.html">Contactanos</a></li>
-                    </ul>
-                    
+                      <a href="index.html" class="brand-logo"><img src="img/L-bLANCO.png" alt=""></a>
+                      <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                      <ul id="menu" class="right hide-on-med-and-down"></ul>
                     </div>
                 </div>
               </nav>
             </div>    
-              <ul class="sidenav" id="mobile-demo">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="quienesSomos.html">Quienes Somos</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="productos.html">Que hacemos</a></li>
-                <li><a href="contacto.html">Contactanos</a></li>
-              </ul>
+              <ul class="sidenav" id="mobile-menu"></ul>
 
               <div class="carousel carousel-slider mb-4">
                 <a class="carousel-item" href="#one!" ><img src="img/Carrilera.png"></a>
@@ -94,12 +83,7 @@ Se busca a través de una metodología altamente activa, participativa y aplicad
                     </div>
                     <div class="col l4 offset-l2 s12">
                       
-                      <ul>
-                        <li><a class="grey-text text-lighten-3"  href="sass.html">Inicio</a></li>
-                        <li><a class="grey-text text-lighten-3"  href="badges.html">Quienes Somos</a></li>
-                        <li><a class="grey-text text-lighten-3"  href="collapsible.html">Nuestros productos</a></li>
-                        <li><a class="grey-text text-lighten-3"  href="mobile.html">Contactanos</a></li>
-                      </ul>
+                      <ul id="footer-menu"> </ul>
                     </div>
                   </div>
                 </div>
@@ -113,7 +97,7 @@ Se busca a través de una metodología altamente activa, participativa y aplicad
             <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
             
       <script src="js/materialize.min.js"></script>
-      
+      <script src="js/menu.js"></script>
      
 
       <script>
