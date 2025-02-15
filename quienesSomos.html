@@ -21,6 +21,7 @@
               <li><a href="index.html">Inicio</a></li>
               <li><a href="quienesSomos.html">Quienes Somos</a></li>
               <li><a href="productos.html">Nuestros productos</a></li>
+              <li><a href="servicios.html">Servicios</a></li>
               <li><a href="contacto.html">Contactanos</a></li>
             </ul>
           </div>
@@ -33,6 +34,7 @@
       <li><a href="index.html">Inicio</a></li>
       <li><a href="quienesSomos.html">Quienes Somos</a></li>
       <li><a href="productos.html">Nuestros productos</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
       <li><a href="contacto.html">Contactanos</a></li>
     </ul>
 
@@ -47,8 +49,11 @@
     </div>
 
     <div class="container">
-      <div class="content-container">
-        <div class="text-content">
+      <div class="row">
+        <div class="col s12 m6 mt-4 ">
+          <img src="img/somosImg.jpg" class="responsive-img" alt="Imagen de Quienes Somos" style="margin-top: 75px;">
+        </div>
+        <div class="col s12 m6">
           <h5>¿Quiénes Somos?</h5>
           <p>
             La Universidad San Pablo de Guatemala es una institución educativa privada fundada con el propósito de contribuir a la formación de la sociedad mediante una educación integral que abarca aspectos académicos, éticos y morales. Su visión se centra en impactar a los estudiantes no solo en el ámbito académico, sino también en sus principios y valores, preparándolos para ser agentes de transformación en la sociedad.
@@ -57,12 +62,11 @@
             <li><strong>Campus Central:</strong> Ubicado en la Zona 14 de la Ciudad de Guatemala, este campus alberga las instalaciones principales de la universidad.</li>
             <li><strong>Campus Escuintla:</strong> Inaugurado en 2014, este campus se encuentra en la ciudad de Escuintla, ampliando así su alcance educativo.</li>
           </ul>
-
           <p>
             La universidad se fundamenta en un sistema educativo que promueve modelos innovadores y una acción pedagógica comprometida con la transformación personal y social. Su filosofía educativa está centrada en la innovación, la invención y la generación de ideas originales, sin límites. Además, enfatiza el uso de tecnologías de información y comunicación como parte integral del aprendizaje, fomentando un espíritu de servicio a la comunidad y el desarrollo de valores progresistas.
           </p>
         </div>
-        <img src="img/somosImg.jpg">
+        
       </div>
     </div>
 
@@ -94,9 +98,12 @@
 
     <script src="js/materialize.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
+    
     <script>
+      
       document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
         var elems = document.querySelectorAll('.carousel');
         var instances = M.Carousel.init(elems, { fullWidth: true, indicators: false });
         var parallaxContainers = document.querySelectorAll('.parallax-container');
