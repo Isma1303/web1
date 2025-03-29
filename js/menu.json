@@ -2,17 +2,7 @@
   "menu": [
     {
     "name": "Inicio",
-    "url": "index.html",
-    "submenu": [
-      {
-      "name": "Iniciar sesión",
-      "url": "#"
-      },
-      {
-      "name": "Registarse",
-      "url": "#"
-      }
-    ]
+    "url": "index.html"
     },
     {
     "name": "Quienes Somos",

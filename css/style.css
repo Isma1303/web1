@@ -92,3 +92,19 @@ form {
 li.active {
     background-color: #f9a000 !important;
 }
+.submenu {
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0px;
+    margin-top: 0px;
+    right: 0;
+    z-index: 1000;
+    width: fit-content;
+    max-width: 150px;;
+}
+.submenu li{
+    background: #263238;
+    width: 100%;
+}
