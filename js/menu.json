@@ -1,25 +1,51 @@
 {
-    "menu": [
+  "menu": [
+    {
+    "name": "Inicio",
+    "url": "index.html",
+    "submenu": [
       {
-        "name": "Inicio",
-        "url": "index.html"
+      "name": "Iniciar sesión",
+      "url": "#"
       },
       {
-        "name": "Quienes Somos",
-        "url": "quienesSomos.html"
-      },
-      {
-        "name": "Servicios",
-        "url": "servicios.html"
-      },
-      {
-        "name": "Acerca de",
-        "url": "acerca.html"
-      },
-      {
-        "name": "Contacto",
-        "url": "contacto.html"
+      "name": "Registarse",
+      "url": "#"
       }
     ]
-  }
-  
+    },
+    {
+    "name": "Quienes Somos",
+    "url": "quienesSomos.html"
+    },
+    {
+    "name": "Servicios",
+    "url": "servicios.html"
+    },
+    {
+    "name": "Acerca de",
+    "url": "acerca.html"
+    },
+    {
+    "name": "Contacto",
+    "url": "contacto.html"
+    },
+    {
+      "name": "|"
+    },
+    {
+      "name": "Usuario",
+      "url": "",
+      "submenu": [
+        {
+        "name": "Iniciar sesión",
+        "url": "#"
+        },
+        {
+        "name": "Registarse",
+        "url": "#"
+        }
+      ]
+      }
+  ]
+}
