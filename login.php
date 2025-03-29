@@ -6,7 +6,7 @@ $searchuser = mysqli_query($conn, "SELECT * FROM user WHERE name='$usuarioingres
 if($searchuser && mysqli_num_rows($searchuser) > 0){
    $show = mysqli_fetch_array($searchuser);
 } else {
-    echo "Usuario no encontrado";
+    echo "Usuario no ha sido encontrado";
 }
 ?>
 
