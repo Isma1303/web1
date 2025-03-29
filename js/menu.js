@@ -9,7 +9,16 @@ function cargarMenu() {
             data.menu.forEach(item => {
                 const li = document.createElement("li");
                 const a = document.createElement("a");
-                a.textContent = item.name;
+
+                if (item.name === "login") {
+                    const icon = document.createElement("i");
+                    icon.className = "material-icons"; // Cambia esto por la clase del ícono que desees
+                    icon.textContent = "login"; // Cambia esto por el nombre del ícono
+                    a.appendChild(icon);
+                } else {
+                    a.textContent = item.name || item.icon || "Unnamed"; // Usa icon si no hay name
+                }
+
                 a.href = item.url;
                 li.appendChild(a);
                 if (item.url === currentPage) {
@@ -24,12 +33,16 @@ function cargarMenu() {
                 if (item.submenu && item.submenu.length > 0) {
                     const ulSubmenu = document.createElement("ul");
                     ulSubmenu.classList.add("submenu");
-                    
 
                     item.submenu.forEach(subItem => {
                         const subLi = document.createElement("li");
                         const subA = document.createElement("a");
-                        subA.textContent = subItem.name;
+                        if (subItem.icono) {
+                            const icon = document.createElement("i");
+                            icon.className = subItem.icono;
+                            subA.appendChild(icon);
+                        }
+                        subA.appendChild(document.createTextNode(subItem.name || "Unnamed"));
                         subA.href = subItem.url;
                         subLi.appendChild(subA);
                         ulSubmenu.appendChild(subLi);
